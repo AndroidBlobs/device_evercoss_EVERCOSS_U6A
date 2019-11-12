@@ -1,0 +1,53 @@
+#
+# from device/sprd/isharkl2/sp9853i_1h10/system.prop
+#
+ro.product.hardware=sp9853i_1h10_v1.0.0
+# Set Opengl ES Version 3.2
+ro.opengles.version=196610
+
+
+#enable audio nr tuning
+ro.audio_tunning.nr=1
+
+#use sprd define media_profiles
+media.settings.xml = vendor/etc/media_profiles_turnkey.xml
+
+#enable audio dual spk  tuning
+ro.audio_tunning.dual_spk=0
+
+
+ro.fm.chip.port.UART.androidm=false
+
+persist.sys.cam.eois.dc.back=false
+persist.sys.cam.eois.dc.front=false
+persist.sys.cam.eois.dv.back=true
+persist.sys.cam.eois.dv.front=false
+persist.sys.cam.pipviv=false
+
+persist.sys.cam.battery.flash=15
+
+#FRP property for pst device
+ro.frp.pst=/dev/block/platform/soc/soc:ap-ahb/c0c00000.sdio/by-name/persist
+
+persist.sys.cam.refocus.enable=false
+persist.sys.cam.ba.blur.version=6
+
+persist.sys.blending.enable=true
+
+persist.sys.sprd.refocus.bokeh=true
+
+#Enable sdcardfs feature
+ro.sys.sdcardfs=true
+persist.sys.sdcardfs=force_on
+persist.bindcore.hdr=_4_0_1_2_3
+
+#face_beauty lib   0--close_fb  1--arcsoft  2--sprd
+persist.sys.cam.facebeauty.corp=2
+
+#sprd_fb lib feature switch  0--part func  1--full func
+persist.sys.cam.beauty.fullfuc=false
+
+#virtualkeys
+qemu.hw.mainkeys=0
+
+#
